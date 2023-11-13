@@ -8,6 +8,7 @@ MSRV="1\.48\.0"
 
 # Test pinned versions.
 if cargo --version | grep ${MSRV}; then
+    cargo update -p syn:2.0.39 --precise 2.0.39
     cargo update -p serde_json --precise 1.0.99
     cargo update -p serde --precise 1.0.156
     cargo update -p quote --precise 1.0.30
